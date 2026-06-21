@@ -4,10 +4,8 @@ CampusLink es una landing page estatica para presentar una solucion de reporte, 
 
 ## Autores
 
-- Integrante 1
-- Integrante 2
-- Integrante 3
-- Integrante 4
+- Italo Gabriel Ninahuanca Garcia
+- Diego Yahir Chilingano Salas
 
 ## Segmentos objetivo
 
