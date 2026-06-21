@@ -10,7 +10,7 @@ export function renderAuth(pantalla) {
   return '<div class="vistaAppScreen" data-vista-pantalla="' + textoSeguro(pantalla.id) + '">' +
     '<div class="vistaAppAuth vistaAppAuth--login">' +
       '<div class="vistaAppAuthTop">' +
-        '<div class="vistaAppLogoApp"><img src="recursos/logo/favicon.png" alt=""></div>' +
+        '<div class="vistaAppLogoApp"><img src="assets/images/logo/favicon.png" alt=""></div>' +
         '<div><h3 class="vistaAppMarcaTitulo">' + t(data.titulo) + '</h3><h4 class="vistaAppTitulo vistaAppTitulo--chico vistaAppTitulo--centro">' + t(data.subtitulo) + '</h4></div>' +
         '<p class="vistaAppTexto vistaAppTexto--centro">' + t(data.descripcion) + '</p>' +
       '</div>' +
@@ -29,7 +29,7 @@ export function renderAuthForm(pantalla) {
     '<div class="vistaAppAuth vistaAppAuth--data">' +
       '<div class="vistaAppAuthContent">' +
         '<div class="vistaAppAuthTop vistaAppAuthTop--data">' +
-          '<div class="vistaAppLogoApp"><img src="recursos/logo/favicon.png" alt=""></div>' +
+          '<div class="vistaAppLogoApp"><img src="assets/images/logo/favicon.png" alt=""></div>' +
           '<div class="vistaAppAuthBrand"><h3 class="vistaAppMarcaTitulo">' + t(data.titulo) + '</h3><h4 class="vistaAppTitulo vistaAppTitulo--chico vistaAppTitulo--centro">' + t(data.subtitulo) + '</h4></div>' +
           '<p class="vistaAppTexto vistaAppTexto--centro">' + t(data.descripcion) + '</p>' +
         '</div>' +

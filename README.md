@@ -1,34 +1,82 @@
 # CampusLink
 
-Landing estatica de **CampusLink** (Montimin), hecha con HTML, CSS y JavaScript, sin frameworks ni dependencias.
+CampusLink es una landing page estatica para presentar una solucion de reporte, ubicacion y seguimiento de incidencias dentro de un campus.
 
-## Version para descargar
+## Autores
 
-Para revisar o presentar el proyecto, descarga siempre la version mas reciente publicada:
+- Integrante 1
+- Integrante 2
+- Integrante 3
+- Integrante 4
 
-- **Version actual:** `v1.1.0`
-- **Descargar ZIP:** [CampusLink v1.1.0](https://github.com/Italo-NG/CampusLink/archive/refs/tags/v1.1.0.zip)
+## Segmentos objetivo
 
-Si GitHub muestra varias versiones o tags, usa la mas reciente para evitar descargar una entrega anterior.
+- Estudiantes que necesitan reportar incidencias del campus de forma rapida.
+- Docentes que requieren comunicar problemas de infraestructura, bienestar o seguridad.
+- Personal de soporte y operaciones que atiende, prioriza y da seguimiento a reportes.
 
-## Landing publicada
+## Caracteristicas principales
 
-La landing tambien esta disponible en estos enlaces:
+- Presentacion de la propuesta de valor de CampusLink.
+- Secciones informativas sobre problema, solucion, beneficios y usuarios objetivo.
+- Explicacion del flujo de reporte y seguimiento de incidencias.
+- Vista demostrativa de la experiencia mobile.
+- Formulario de contacto institucional.
+- Pantalla basica de inicio de sesion.
 
-- [https://www.campuslinks.site/](https://www.campuslinks.site/)
-- [https://campuslink.nilla.online/](https://campuslink.nilla.online/)
+## Tecnologias usadas
 
-## Como abrir el proyecto localmente
+- HTML5
+- CSS3
+- JavaScript
+- Cucumber para escenarios de aceptacion
 
-El proyecto usa modulos de JavaScript (`<script type="module">`).
+## Estructura del proyecto
 
-1. Abre la carpeta en Visual Studio Code.
-2. Instala la extension **Live Server**.
-3. Click derecho en `index.html` y selecciona **Open with Live Server**.
-4. Se abrira en `http://127.0.0.1:5500/` o un puerto similar.
+```text
+public/
+  index.html
+  favicon.ico
+  login.html
+  assets/
+    styles/
+      styles.css
+      base.css
+      layout.css
+      components.css
+      pages.css
+      responsive.css
+      login.css
+      vista-app/
+    images/
+      logo/
+      imagenes/
+    scripts/
+      main.js
+      login.js
+      modulos/
+features/
+  landing/
+  mobile-core/
+  step_definitions/
+README.md
+package.json
+```
 
-## Estructura de estilos
+## Flujo GitFlow usado
 
-Los CSS se cargan en este orden:
+- `main`: rama principal estable del proyecto.
+- `develop`: rama de integracion creada desde `main`.
+- `feature/landing-work-in-progress`: rama de trabajo creada desde `develop` para la estructura y avance funcional de la landing page.
 
-`base` -> `layout` -> `components` -> `pages` -> `responsive`
+Los cambios se trabajan primero en ramas `feature/*`, luego se integran mediante Pull Request hacia `develop` y, si corresponde, desde `develop` hacia `main`.
+
+## Como ejecutar
+
+El proyecto usa modulos de JavaScript, por lo que se recomienda abrir `public/index.html` con WebStorm usando un servidor local o Live Server.
+
+## Pruebas
+
+```bash
+npm run test:acceptance
+```
